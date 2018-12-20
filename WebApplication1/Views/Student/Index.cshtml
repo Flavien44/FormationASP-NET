@@ -1,0 +1,26 @@
+﻿@model WebApplication1.Models.Student
+
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+@section Header{
+<h2>Student Detail</h2>
+}
+<p>@Model.Name
+@{ 
+    if (Model.HasPaid)
+    {
+        @:has paid.
+    }
+    else
+    {
+        @:has not paid
+    }
+}
+</p>
+Contact:
+<a href="mailto:@Model.Email">@Model.Email</a>
+@Html.Partial("_Footer")
+
