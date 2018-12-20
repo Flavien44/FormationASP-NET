@@ -1,0 +1,15 @@
+﻿@model WebApplication1.Models.CreateViewModel
+
+@{
+    ViewBag.Title = "Create Student";
+}
+
+<h2>Create Student</h2>
+
+@using(Html.BeginForm())
+{
+    @Html.EditorFor(m => m.Student)
+    <input type="submit" value="create" />
+}
+
+
