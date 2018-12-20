@@ -7,5 +7,8 @@ namespace WebApplication1.Models
 {
     public class DetailViewModel
     {
+        public Student Student { get; set; }
+
+        public string School { get; set; }
     }
 }
